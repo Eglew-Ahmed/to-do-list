@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #212553
+}
+
+body {
+    background-color: #F5F5F5;
+    /* Light gray or off-white */
+
+    padding: 40px;
+}
+
+.box {
+    background: white;
+    border: 10px solid #1e4269;
+    border-radius: 10px;
+    width: 400px;
+    /* Lighter golden color */
+
+    padding: 10px;
+}
+@media (max-width:2000px) {
+    .box{
+      width: 700px;
+    }  
+  }
+@media (max-width:900px) {
+    .box{
+      width: 350px;
+    }  
+  }
+  @media (max-width:780px) {
+    .box{
+      width: 200px;
+    }  
+  }
+@media (max-width:480px) {
+  .box{
+    width: 280px;
+  }  
+}
+
+
+
+.box .title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.add-note {
+  
+    padding: 10px;
+}
+@media (min-width:800px) {
+    .add-note{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap: 20px;
+
+    }
+    
+}
+.add-note input {
+    border: 1px solid #1e4269;
+    outline: none;
+    padding: 5px;
+    max-width: 90%;
+}
+.add-note .add {
+    background-color:#1e4269;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+.task{
+    background-color: aquamarine;
+    margin: 5px 0;
+    padding: 5px;
+}
